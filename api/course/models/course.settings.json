@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "Course",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "products": {
+      "via": "course",
+      "collection": "product"
+    },
+    "instructors": {
+      "via": "courses",
+      "collection": "instructor"
+    },
+    "sessions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sessions.sessions"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

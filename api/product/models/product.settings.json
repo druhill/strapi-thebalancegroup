@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "course": {
+      "model": "course",
+      "via": "products"
+    },
+    "capacity": {
+      "type": "integer"
+    },
+    "dates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dates.dates"
+    },
+    "availability": {
+      "type": "integer"
+    },
+    "presentationMethod": {
+      "type": "enumeration",
+      "enum": [
+        "FaceToFace",
+        "Online"
+      ],
+      "required": true
+    },
+    "order": {
+      "model": "order",
+      "via": "products"
+    }
+  }
+}

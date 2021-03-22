@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "instructors",
+  "info": {
+    "name": "Instructor",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "courses": {
+      "collection": "course",
+      "via": "instructors",
+      "dominant": true
+    }
+  }
+}

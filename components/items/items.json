@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_items_items",
+  "info": {
+    "name": "Items",
+    "icon": "list-ol",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "string"
+    }
+  }
+}

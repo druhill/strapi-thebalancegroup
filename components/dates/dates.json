@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_dates_dates",
+  "info": {
+    "name": "dates",
+    "icon": "calendar-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "start": {
+      "type": "datetime"
+    },
+    "duration": {
+      "type": "decimal"
+    }
+  }
+}

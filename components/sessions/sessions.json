@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sessions_sessions",
+  "info": {
+    "name": "sessions",
+    "icon": "list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "items.items"
+    }
+  }
+}
